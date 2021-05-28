@@ -6,7 +6,7 @@ namespace LambdaSample
     {
         static void Main(string[] args)
         {
-            //test
+            //test2
             Console.WriteLine("Hello World!");
         }
     }
