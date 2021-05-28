@@ -2,12 +2,19 @@
 
 namespace LambdaSample
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            //test2
-            Console.WriteLine("Hello World!");
+            try
+            {
+                Function function = new Function();
+                function.FunctionHandler("test", null);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
     }
 }
