@@ -8,8 +8,9 @@ namespace LambdaSample
         {
             try
             {
-                Function function = new Function();
-                function.FunctionHandler("test", null);
+                // test code
+                // Function function = new Function();
+                // function.FunctionHandler("test", null);
             }
             catch (Exception e)
             {
