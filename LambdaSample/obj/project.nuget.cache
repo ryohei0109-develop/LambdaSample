@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Hj0chdz3dbF8JqRuMDMJX/UcMlXMGSeBYMzUx9BSpG+dg5oSTcRvCsdptWtccMHmtEbfesyHDqh/XEQ1RpVuyA==",
+  "dgSpecHash": "AaBuYPo8DQznZW9cGxk3y+lPDGU252ZLb05B6hB5RZIxhTUpEc/UtlULn9+JCiXBV9p8lj9FboDrzffL3TWdFA==",
   "success": true,
   "projectFilePath": "/Users/ryohei/Documents/workspace/LambdaSample/LambdaSample/LambdaSample.csproj",
   "expectedPackageFiles": [
+    "/Users/ryohei/.nuget/packages/amazon.lambda.apigatewayevents/2.4.0/amazon.lambda.apigatewayevents.2.4.0.nupkg.sha512",
     "/Users/ryohei/.nuget/packages/amazon.lambda.core/2.0.0/amazon.lambda.core.2.0.0.nupkg.sha512",
-    "/Users/ryohei/.nuget/packages/amazon.lambda.serialization.systemtextjson/2.1.0/amazon.lambda.serialization.systemtextjson.2.1.0.nupkg.sha512",
-    "/Users/ryohei/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.15/microsoft.netcore.app.host.linux-x64.3.1.15.nupkg.sha512"
+    "/Users/ryohei/.nuget/packages/amazon.lambda.serialization.systemtextjson/2.1.0/amazon.lambda.serialization.systemtextjson.2.1.0.nupkg.sha512"
   ],
   "logs": []
 }

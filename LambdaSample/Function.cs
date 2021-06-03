@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection;
+﻿using System.Collections.Generic;
+using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
@@ -9,16 +8,25 @@ namespace LambdaSample
 {
     public class Function
     {
-        public string FunctionHandler(object request, ILambdaContext context)
+        public APIGatewayProxyResponse FunctionHandler(APIGatewayProxyRequest input, ILambdaContext context)
         {
-            string response = "ok4";
+            string inputBody = input.Body;
 
-            if (request != null)
+            // Logger
+            LambdaLogger.Log("test log");
+
+            return new APIGatewayProxyResponse
             {
-                LambdaLogger.Log(request.ToString());
-            }
-
-            return response;
+                StatusCode = 200,
+                Body = null,
+                /*
+                Body = System.Text.Json.JsonSerializer.Serialize(
+                    responseBody, typeof(APIGatewayProxyRequest),
+                    new System.Text.Json.JsonSerializerOptions { WriteIndented = true }),
+                */
+                IsBase64Encoded = false,
+                Headers = new Dictionary<string, string>() { { "Content-Type", "application/json" } }
+            };
         }
     }
 }
